@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Restaurant Application</h1>
+        <nav class="nav">
+          <a href="home.html">Home</a>
+          <a href="menu.html">Menu</a>
+        </nav>
+        <div class="container">
+            <h2>Place an Order</h2>
+
+            <div class="order-form">
+                <form>
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" name="name" class="form-input">
+
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-input">
+
+                    <label for="menu-item" class="form-label">Menu Item</label>
+                    <select id="menu-item" name="menu-item" class="form-input">
+                        <option value="">Select a Menu Item</option>
+                        <option value="Strawberry Pastry">Strawberry Pastry</option>
+                        <option value="Salom salad">Salom salad</option>
+                        <option value="Poached Egg">Poached Egg</option>
+                        <option value="Banana Berry Pastry">Banana Berry Pastry</option>
+                    </select>
+
+                    <label for="quantity" class="form-label">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" class="form-input">
+
+                    <button type="button">Add to cart</button>
+                </form>
+
+            </div>
+            
+
+        </div>
+        
+    <footer class="footer">
+        <p>&copy; 2023 Restaurant Application. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+.nav{
+  margin-top: 4px ;
+}
+.header{
+  background-color: rgb(35, 35, 35);
+  text-align: center;
+  color:antiquewhite;
+  font-size: 1.5rem;
+  padding: 20px;
+  max-height: 150px;
+  width: 100%;
+}
+.container{
+  width: 800px;
+  padding-left: 550px;
+  padding-top: 50px;
+  padding-bottom:50px ;
+  
+}
+.nav a{
+  color: antiquewhite;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.footer{
+  background-color:rgb(35, 35, 35);
+  text-align: center;
+  padding: 20px;
+  font-size: large;
+  color: antiquewhite;
+  width: 100%;
+  bottom: 0;
+  margin-left: 0;
+
+}
+h2{
+  color: black;
+}
+.form-label{
+  color: black;
+  font-size: 1.5rem;
+}
+.form-input{
+  width: 100%;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 7px;
+  background-color: antiquewhite;
+  font-size: 1rem;
+}
+.form-input:hover{
+  background-color: aliceblue;
+}
+.order-form{
+  text-align: center;
+}
+button{
+  color: antiquewhite;
+  background-color: black;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 1.5rem;
+}
+input[type=text], input[type=email], input[type=number], select {
+  width: 100%;
+  padding: 20px 40px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
