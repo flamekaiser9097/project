@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Background</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showSignUpBox()">Login / Sign up</button>
+
+    <div class="container">
+        <dialog id="SignUpBox">
+            <form action="">
+                <input type="text" placeholder="Enter your name">
+                <input type="email" placeholder="Enter your Email">
+                <input type="password" placeholder="Create a password">
+                <input type="text" placeholder="Confirm password">
+            </form>
+            <button id="closeBtn" onclick="closeSignUpBox()">Close</button>
+            <p>Already a user ?</p> <button class="loginBtn" onclick="showLoginBox()">Login</button>
+        </dialog>
+
+  
+        <dialog id="loginBox">
+            <form action="">
+                <input type="email" placeholder="Enter your email">
+                <input type="password" placeholder="Enter your password">
+            </form>
+            <button id="closeBtn" onclick="closeLoginBox()">Close</button>
+            <p>New to the page ?</p><button class="signUpBtn" onclick="showSignUpBox()">Sign up</button>
+        </dialog>
+    </div>
+
+    <script>
+        let loginBtn = document.querySelector(".loginBtn");
+        let signUpBtn = document.querySelector(".signUpBtn");
+        let SignUpBox = document.querySelector("#SignUpBox");
+        let loginBox = document.querySelector("#loginBox");
+        let closeBtn = document.querySelector("#closeBtn")
+        
+        function showLoginBox() {
+            loginBox.showModal();
+            SignUpBox.close();
+        }
+
+        function showSignUpBox() {
+            SignUpBox.showModal();
+            loginBox.close();
+        }
+
+        function closeLoginBox() {
+            loginBox.close();
+        }
+
+        function closeSignUpBox() {
+            SignUpBox.close();
+        }
+
+        loginBtn.addEventListener('click', showLoginBox);
+        signUpBtn.addEventListener('click', showSignUpBox);
+        closeBtn.addEventListener("click" , closeLoginBox);
+    </script>
+</body>
+</html>
